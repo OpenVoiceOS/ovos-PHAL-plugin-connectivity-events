@@ -33,8 +33,8 @@ class ConnectivityState(IntEnum):
 
 class ConnectivityEvents(PHALPlugin):
 
-    def __init__(self, bus=None):
-        super().__init__(bus, "connectivity_events")
+    def __init__(self, bus=None, config=None):
+        super().__init__(bus=bus, name="ovos-PHAL-plugin-connectivity-events", config=config)
         self.sleep_time = 60
         self.state = ConnectivityState.UNKNOWN
         self.bus.on("ovos.PHAL.internet_check", self.handle_check)
