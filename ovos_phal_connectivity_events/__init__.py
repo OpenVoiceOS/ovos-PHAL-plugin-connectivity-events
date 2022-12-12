@@ -1,5 +1,6 @@
 import time
 from enum import IntEnum
+from threading import Event
 
 from mycroft_bus_client import Message
 from ovos_plugin_manager.phal import PHALPlugin
@@ -37,10 +38,21 @@ class ConnectivityEvents(PHALPlugin):
     def __init__(self, bus=None, config=None):
         super().__init__(bus=bus, name="ovos-PHAL-plugin-connectivity-events", config=config)
         self.sleep_time = 60
+        self.stopping = Event()
         self.state = ConnectivityState.UNKNOWN
         self.bus.on("ovos.PHAL.internet_check", self.handle_check)
         if not self.config.get('disable_scheduled_checks'):
             self.bus.emit(Message("ovos.PHAL.internet_check"))
+
+    def run(self):
+        if self.config.get('disable_scheduled_checks'):
+            self.stopping.wait()
+        while not self.stopping.wait(self.sleep_time):
+            self.handle_check(None)
+
+    def shutdown(self):
+        PHALPlugin.shutdown(self)
+        self.stopping.set()
 
     def update_state(self, new_state: ConnectivityState, message: Message):
         """
@@ -54,6 +66,7 @@ class ConnectivityEvents(PHALPlugin):
         :param new_state: Current connection state
         :param message: Message associated with request to check internet state
         """
+        message = message or Message("connectivity_check")
         LOG.info(f"Network state changed to: {new_state.value}")
         if new_state == ConnectivityState.FULL:  # Gained internet
             if self.state <= ConnectivityState.NONE:  # Gained network
@@ -86,7 +99,10 @@ class ConnectivityEvents(PHALPlugin):
             self.bus.emit(message.reply("mycroft.network.state",
                                         {"state": "disconnected"}))
 
-    def handle_check(self, message):
+    def handle_check(self, message=None):
+        """
+        Handle a request to check internet state from messagebus API or thread
+        """
         if not is_connected_dns():
             state = ConnectivityState.NONE
         elif not is_connected_http():
@@ -97,6 +113,5 @@ class ConnectivityEvents(PHALPlugin):
         if state != self.state:
             self.update_state(state, message)
 
-        # check again in self.sleep_time
-        time.sleep(self.sleep_time)
-        self.bus.emit(message)
+        if message:
+            self.bus.emit(message)
