@@ -48,7 +48,7 @@ class ConnectivityEvents(PHALPlugin):
         emits `mycroft.network.connected` if network is newly connected
         emits `mycroft.internet.connected` if internet is newly connected
         emits `mycroft.network.disconnected` if network is newly disconnected
-        emits `mycroft.internet.disconnected` if network is newly disconnected
+        emits `mycroft.internet.disconnected` if internet is newly disconnected
         emits `enclosure.notify.no_internet` if new state has
             some networking but no internet
         :param new_state: Current connection state
