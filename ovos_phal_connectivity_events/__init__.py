@@ -1,4 +1,3 @@
-import time
 from enum import IntEnum
 from threading import Event
 
@@ -42,11 +41,9 @@ class ConnectivityEvents(PHALPlugin):
         self.state = ConnectivityState.UNKNOWN
         self.bus.on("ovos.PHAL.internet_check", self.handle_check)
         if not self.config.get('disable_scheduled_checks'):
-            self.bus.emit(Message("ovos.PHAL.internet_check"))
+            self.start()
 
     def run(self):
-        if self.config.get('disable_scheduled_checks'):
-            self.stopping.wait()
         while not self.stopping.wait(self.sleep_time):
             self.handle_check(None)
 
@@ -112,6 +109,3 @@ class ConnectivityEvents(PHALPlugin):
 
         if state != self.state:
             self.update_state(state, message)
-
-        if message:
-            self.bus.emit(message)
