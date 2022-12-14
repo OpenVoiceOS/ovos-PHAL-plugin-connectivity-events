@@ -11,7 +11,7 @@ setup(
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
     packages=['ovos_phal_connectivity_events'],
-    install_requires=["ovos-plugin-manager>=0.0.1", "dbus-next"],
+    install_requires=["ovos-plugin-manager>=0.0.21a5"],
     zip_safe=True,
     classifiers=[
         'Development Status :: 3 - Alpha',
