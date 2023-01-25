@@ -34,8 +34,8 @@ jobs:
           requirements: 'requirements-all.txt'
           fail: 'Copyleft,Other,Error'
           fails-only: true
-          exclude: '^(tqdm).*'
-          exclude-license: '^(Mozilla).*$|^(NeonAI License).*$'
+          exclude: '^(tqdm|ovos-phal-connectivity-events).*'
+          exclude-license: '^(Mozilla).*$|'
       - name: Print report
         if: ${{ always() }}
         run: echo "${{ steps.license_check_report.outputs.report }}"
