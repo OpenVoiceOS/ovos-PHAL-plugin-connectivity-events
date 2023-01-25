@@ -45,8 +45,9 @@ class ConnectivityEvents(PHALPlugin):
         if self.config.get("disable_scheduled_checks"):
             LOG.info("Scheduled Checks are disabled")
             return
+        self.handle_check()
         while not self.stopping.wait(self.sleep_time):
-            self.handle_check(None)
+            self.handle_check()
 
     def shutdown(self):
         PHALPlugin.shutdown(self)
@@ -108,11 +109,15 @@ class ConnectivityEvents(PHALPlugin):
         """
         Handle a request to check internet state from messagebus API or thread
         """
+        LOG.debug("Checking connectivity")
         if not is_connected_dns():
+            LOG.debug("No DNS Connection")
             state = ConnectivityState.NONE
         elif not is_connected_http():
+            LOG.debug("No HTTP Connection")
             state = ConnectivityState.LIMITED
         else:
+            LOG.debug("Fully connected")
             state = ConnectivityState.FULL
 
         if state != self.state:
