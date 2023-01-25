@@ -7,7 +7,7 @@ from mycroft_bus_client import Message
 from ovos_utils.messagebus import FakeBus
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
-from ovos_phal_connectivity_events import ConnectivityEvents, ConnectivityState
+from ovos_phal_plugin_connectivity_events import ConnectivityEvents, ConnectivityState
 
 
 class TestPlugin(unittest.TestCase):

@@ -4,7 +4,7 @@ on:
     branches:
       - dev
     paths-ignore:
-      - 'ovos_phal_connectivity_events/version.py'
+      - 'ovos_phal_plugin_connectivity_events/version.py'
       - 'requirements/**'
       - 'examples/**'
       - '.github/**'
@@ -19,7 +19,7 @@ on:
       - master
       - dev
     paths-ignore:
-      - 'ovos_phal_connectivity_events/version.py'
+      - 'ovos_phal_plugin_connectivity_events/version.py'
       - 'requirements/**'
       - 'examples/**'
       - '.github/**'

@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 from setuptools import setup
 
-PLUGIN_ENTRY_POINT = 'ovos-phal-connectivity-events=ovos_phal_connectivity_events:ConnectivityEvents'
+PLUGIN_ENTRY_POINT = 'ovos-phal-plugin-connectivity-events=ovos_phal_plugin_connectivity_events:ConnectivityEvents'
 setup(
-    name='ovos-phal-connectivity-events',
+    name='ovos-phal-plugin-connectivity-events',
     version='0.0.1a1',
     description='A PHAL plugin for mycroft/ovos/neon',
     url='https://github.com/NeonGeckoCom/ovos-PHAL-plugin-connectivity-events',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
-    packages=['ovos_phal_connectivity_events'],
+    packages=['ovos_phal_plugin_connectivity_events'],
     install_requires=["ovos-plugin-manager>=0.0.21a5"],
     zip_safe=True,
     classifiers=[
