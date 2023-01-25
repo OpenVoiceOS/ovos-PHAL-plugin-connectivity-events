@@ -34,7 +34,7 @@ jobs:
           requirements: 'requirements-all.txt'
           fail: 'Copyleft,Other,Error'
           fails-only: true
-          exclude: '^(tqdm|ovos-phal-connectivity-events).*'
+          exclude: '^(tqdm|ovos-phal-plugin).*'
           exclude-license: '^(Mozilla).*$|'
       - name: Print report
         if: ${{ always() }}
