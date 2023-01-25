@@ -40,10 +40,11 @@ class ConnectivityEvents(PHALPlugin):
         self.stopping = Event()
         self.state = ConnectivityState.UNKNOWN
         self.bus.on("ovos.PHAL.internet_check", self.handle_check)
-        if not self.config.get('disable_scheduled_checks'):
-            self.start()
 
     def run(self):
+        if self.config.get("disable_scheduled_checks"):
+            LOG.info("Scheduled Checks are disabled")
+            return
         while not self.stopping.wait(self.sleep_time):
             self.handle_check(None)
 
