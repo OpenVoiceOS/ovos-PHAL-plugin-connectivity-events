@@ -97,6 +97,13 @@ class ConnectivityEvents(PHALPlugin):
             self.bus.emit(message.reply("mycroft.network.state",
                                         {"state": "disconnected"}))
 
+        if message.msg_type == "ovos.PHAL.internet_check":
+            internet_connected = self.state == ConnectivityState.FULL
+            network_connected = self.state > ConnectivityState.NONE
+            self.bus.emit(message.response(
+                {"internet_connected": internet_connected,
+                 "network_connected": network_connected}))
+
     def handle_check(self, message=None):
         """
         Handle a request to check internet state from messagebus API or thread
