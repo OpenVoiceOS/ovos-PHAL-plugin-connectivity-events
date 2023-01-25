@@ -14,7 +14,6 @@ class TestPlugin(unittest.TestCase):
     config = {"disable_scheduled_checks": True}
     bus = FakeBus()
     plugin = ConnectivityEvents(bus=bus, config=config)
-    plugin.start()
 
     def test_plugin(self):
         self.assertEqual(self.plugin.state, ConnectivityState.UNKNOWN)
