@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/HEAD)
+## [V0.0.1a3](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.0.1a3) (2023-01-26)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.1a2...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.1a2...V0.0.1a3)
 
 **Closed issues:**
 
