@@ -2,11 +2,19 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/38a85a4e523d087f99e857e27fdda70e8ca280d5...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.1a2...HEAD)
 
 **Closed issues:**
 
 - Add/Update Automation [\#2](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/issues/2)
+
+**Merged pull requests:**
+
+- Ensure connectivity queries always get a response [\#6](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/6) ([NeonDaniel](https://github.com/NeonDaniel))
+
+## [V0.0.1a2](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.0.1a2) (2023-01-26)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/38a85a4e523d087f99e857e27fdda70e8ca280d5...V0.0.1a2)
 
 **Merged pull requests:**
 
