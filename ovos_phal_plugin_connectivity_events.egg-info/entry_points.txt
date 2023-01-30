@@ -1,3 +1,0 @@
-[ovos.plugin.phal]
-ovos-phal-plugin-connectivity-events=ovos_phal_plugin_connectivity_events:ConnectivityEvents
-
