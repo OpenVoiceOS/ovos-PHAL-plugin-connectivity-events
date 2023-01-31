@@ -45,9 +45,10 @@ class ConnectivityEvents(PHALPlugin):
         if self.config.get("disable_scheduled_checks"):
             LOG.info("Scheduled Checks are disabled")
             return
-        self.handle_check()
+        message = Message("ovos.PHAL.internet_check")
+        self.handle_check(message)
         while not self.stopping.wait(self.sleep_time):
-            self.handle_check()
+            self.handle_check(message)
 
     def shutdown(self):
         PHALPlugin.shutdown(self)
@@ -98,7 +99,7 @@ class ConnectivityEvents(PHALPlugin):
             self.bus.emit(message.reply("mycroft.network.state",
                                         {"state": "disconnected"}))
 
-    def handle_check(self, message=None):
+    def handle_check(self, message):
         """
         Handle a request to check internet state from messagebus API or thread
         """
