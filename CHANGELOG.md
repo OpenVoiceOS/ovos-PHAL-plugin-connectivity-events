@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.1...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.2a1...HEAD)
+
+**Merged pull requests:**
+
+- Fix typo in setup.py url [\#9](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/9) ([NeonDaniel](https://github.com/NeonDaniel))
+
+## [V0.0.2a1](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.0.2a1) (2023-01-31)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.1...V0.0.2a1)
 
 **Fixed bugs:**
 
