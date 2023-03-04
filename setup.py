@@ -52,7 +52,7 @@ setup(
     description='A PHAL plugin for mycroft/ovos/neon',
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url='https://github.com/NeonGeckoCom/ovos-PHAL-plugin-connectivity-events',
+    url='https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
