@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.2...HEAD)
+
+**Merged pull requests:**
+
+- Refactor mycroft-messagebus-client to `ovos-bus-client` [\#12](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/12) ([NeonDaniel](https://github.com/NeonDaniel))
+
+## [V0.0.2](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.0.2) (2023-03-04)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.2a2...V0.0.2)
+
 ## [V0.0.2a2](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.0.2a2) (2023-03-04)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.2a1...V0.0.2a2)
