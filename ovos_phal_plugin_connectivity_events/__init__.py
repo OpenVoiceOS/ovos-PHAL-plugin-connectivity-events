@@ -1,7 +1,7 @@
 from enum import IntEnum
 from threading import Event
 
-from mycroft_bus_client import Message
+from ovos_bus_client.message import Message
 from ovos_plugin_manager.phal import PHALPlugin
 from ovos_utils.log import LOG
 from ovos_utils.network_utils import is_connected_dns, is_connected_http
