@@ -35,8 +35,9 @@ class ConnectivityState(IntEnum):
 class ConnectivityEvents(PHALPlugin):
 
     def __init__(self, bus=None, config=None):
-        super().__init__(bus=bus, name="ovos-PHAL-plugin-connectivity-events", config=config)
-        self.sleep_time = 60
+        super().__init__(bus=bus, name="ovos-PHAL-plugin-connectivity-events",
+                         config=config)
+        self.sleep_time = self.config.get("check_interval") or 60
         self.stopping = Event()
         self.state = ConnectivityState.UNKNOWN
         self.bus.on("ovos.PHAL.internet_check", self.handle_check)
@@ -67,7 +68,7 @@ class ConnectivityEvents(PHALPlugin):
         :param message: Message associated with request to check internet state
         """
         message = message or Message("connectivity_check")
-        LOG.info(f"Network state changed to: {new_state.value}")
+        LOG.info(f"Network state changed to: {new_state.name}")
         if new_state == ConnectivityState.FULL:  # Gained internet
             if self.state <= ConnectivityState.NONE:  # Gained network
                 self.bus.emit(message.reply("mycroft.network.connected"))
