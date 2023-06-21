@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.3](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/0.0.3) (2023-06-21)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/0.0.3a4...0.0.3)
+
+**Merged pull requests:**
+
+- Remove deprecated `scripts` directory [\#14](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/14) ([NeonDaniel](https://github.com/NeonDaniel))
+
 ## [0.0.3a4](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/0.0.3a4) (2023-06-21)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.3a3...0.0.3a4)
