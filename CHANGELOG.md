@@ -1,46 +1,44 @@
 # Changelog
 
-## [V0.0.2a2](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.0.2a2) (2023-03-04)
+## [0.0.3](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/0.0.3) (2023-06-21)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.2a1...V0.0.2a2)
-
-**Merged pull requests:**
-
-- Fix typo in setup.py url [\#9](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/9) ([NeonDaniel](https://github.com/NeonDaniel))
-
-## [V0.0.2a1](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.0.2a1) (2023-01-31)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.1...V0.0.2a1)
-
-**Fixed bugs:**
-
-- fix message argument [\#7](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/7) ([JarbasAl](https://github.com/JarbasAl))
-
-## [V0.0.1](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.0.1) (2023-01-26)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.1a3...V0.0.1)
-
-## [V0.0.1a3](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.0.1a3) (2023-01-26)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.1a2...V0.0.1a3)
-
-**Closed issues:**
-
-- Add/Update Automation [\#2](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/issues/2)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/0.0.3a4...0.0.3)
 
 **Merged pull requests:**
 
-- Ensure connectivity queries always get a response [\#6](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/6) ([NeonDaniel](https://github.com/NeonDaniel))
+- Remove deprecated `scripts` directory [\#14](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/14) ([NeonDaniel](https://github.com/NeonDaniel))
 
-## [V0.0.1a2](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.0.1a2) (2023-01-26)
+## [0.0.3a4](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/0.0.3a4) (2023-06-21)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/38a85a4e523d087f99e857e27fdda70e8ca280d5...V0.0.1a2)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.3a3...0.0.3a4)
 
 **Merged pull requests:**
 
-- Add GH Automation [\#5](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/5) ([NeonDaniel](https://github.com/NeonDaniel))
-- Bugfixes and Compatibility [\#4](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/4) ([NeonDaniel](https://github.com/NeonDaniel))
-- Unit tests and bugfixes [\#1](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/1) ([NeonDaniel](https://github.com/NeonDaniel))
+- Update GH Automation to use shared actions [\#13](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/13) ([NeonDaniel](https://github.com/NeonDaniel))
+
+## [V0.0.3a3](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.0.3a3) (2023-06-21)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.3a2...V0.0.3a3)
+
+**Implemented enhancements:**
+
+- feat/network\_reqs [\#8](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/8) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.3a2](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.0.3a2) (2023-06-20)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.3a1...V0.0.3a2)
+
+**Merged pull requests:**
+
+- Allow configuring connection check interval [\#11](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/11) ([NeonDaniel](https://github.com/NeonDaniel))
+
+## [V0.0.3a1](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.0.3a1) (2023-06-10)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.2...V0.0.3a1)
+
+**Merged pull requests:**
+
+- Refactor mycroft-messagebus-client to `ovos-bus-client` [\#12](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/12) ([NeonDaniel](https://github.com/NeonDaniel))
 
 
 

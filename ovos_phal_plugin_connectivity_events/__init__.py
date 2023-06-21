@@ -1,10 +1,12 @@
 from enum import IntEnum
 from threading import Event
 
-from mycroft_bus_client import Message
+from ovos_bus_client.message import Message
 from ovos_plugin_manager.phal import PHALPlugin
 from ovos_utils.log import LOG
 from ovos_utils.network_utils import is_connected_dns, is_connected_http
+from ovos_utils import classproperty
+from ovos_utils.process_utils import RuntimeRequirements
 
 
 class ConnectivityState(IntEnum):
@@ -35,11 +37,21 @@ class ConnectivityState(IntEnum):
 class ConnectivityEvents(PHALPlugin):
 
     def __init__(self, bus=None, config=None):
-        super().__init__(bus=bus, name="ovos-PHAL-plugin-connectivity-events", config=config)
-        self.sleep_time = 60
+        super().__init__(bus=bus, name="ovos-PHAL-plugin-connectivity-events",
+                         config=config)
+        self.sleep_time = self.config.get("check_interval") or 60
         self.stopping = Event()
         self.state = ConnectivityState.UNKNOWN
         self.bus.on("ovos.PHAL.internet_check", self.handle_check)
+
+    @classproperty
+    def runtime_requirements(self):
+        return RuntimeRequirements(internet_before_load=False,
+                                   network_before_load=False,
+                                   requires_internet=False,
+                                   requires_network=False,
+                                   no_internet_fallback=True,
+                                   no_network_fallback=True)
 
     def run(self):
         if self.config.get("disable_scheduled_checks"):
@@ -67,7 +79,7 @@ class ConnectivityEvents(PHALPlugin):
         :param message: Message associated with request to check internet state
         """
         message = message or Message("connectivity_check")
-        LOG.info(f"Network state changed to: {new_state.value}")
+        LOG.info(f"Network state changed to: {new_state.name}")
         if new_state == ConnectivityState.FULL:  # Gained internet
             if self.state <= ConnectivityState.NONE:  # Gained network
                 self.bus.emit(message.reply("mycroft.network.connected"))
