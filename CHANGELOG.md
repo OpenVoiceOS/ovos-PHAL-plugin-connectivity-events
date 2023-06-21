@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.3a1...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.3a2...HEAD)
+
+**Implemented enhancements:**
+
+- feat/network\_reqs [\#8](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/8) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.3a2](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.0.3a2) (2023-06-20)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.0.3a1...V0.0.3a2)
 
 **Merged pull requests:**
 
