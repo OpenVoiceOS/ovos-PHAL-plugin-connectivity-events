@@ -32,7 +32,7 @@ jobs:
           pip install pytest pytest-timeout pytest-cov pytest-mock
       - name: Run unittests
         run: |
-          pytest --cov=ovos_PHAL --cov-report xml test
+          pytest --cov=ovos-PHAL-plugin-connectivity-events --cov-report xml test
           # NOTE: additional pytest invocations should also add the --cov-append flag
           #       or they will overwrite previous invocations' coverage reports
           #       (for an example, see OVOS Skill Manager's workflow)
