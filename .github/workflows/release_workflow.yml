@@ -12,7 +12,7 @@ jobs:
     secrets: inherit
     with:
       branch: 'dev'
-      version_file: 'ovos_PHAL_plugin_system/version.py'
+      version_file: 'ovos_phal_plugin_connectivity_events/version.py'
       setup_py: 'setup.py'
       update_changelog: true
       publish_prerelease: true
