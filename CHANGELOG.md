@@ -1,13 +1,16 @@
 # Changelog
 
-## [0.0.4a1](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/0.0.4a1) (2024-09-11)
+## [0.1.1a1](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/0.1.1a1) (2024-11-06)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/0.0.3...0.0.4a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.1.0...0.1.1a1)
 
 **Merged pull requests:**
 
-- fix:automations [\#18](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/18) ([JarbasAl](https://github.com/JarbasAl))
-- feat:semver\_automations [\#17](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/17) ([JarbasAl](https://github.com/JarbasAl))
+- fix: allow latest bus client version [\#20](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/20) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.1.0](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.1.0) (2024-09-11)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/0.1.0...V0.1.0)
 
 
 
