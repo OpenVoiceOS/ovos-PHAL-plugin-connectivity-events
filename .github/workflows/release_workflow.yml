@@ -68,7 +68,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout dev branch
-        uses: actions/checkout@vv4
+        uses: actions/checkout@v4
         with:
           ref: dev
 
