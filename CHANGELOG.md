@@ -1,16 +1,16 @@
 # Changelog
 
-## [0.1.1a1](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/0.1.1a1) (2024-11-06)
+## [0.1.2a1](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/0.1.2a1) (2025-06-08)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.1.0...0.1.1a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.1.1...0.1.2a1)
 
 **Merged pull requests:**
 
-- fix: allow latest bus client version [\#20](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/20) ([JarbasAl](https://github.com/JarbasAl))
+- fix: opm 1.X.X [\#22](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/22) ([JarbasAl](https://github.com/JarbasAl))
 
-## [V0.1.0](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.1.0) (2024-09-11)
+## [V0.1.1](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.1.1) (2024-11-06)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/0.1.0...V0.1.0)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/0.1.1...V0.1.1)
 
 
 
