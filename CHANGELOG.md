@@ -1,16 +1,16 @@
 # Changelog
 
-## [0.1.2a1](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/0.1.2a1) (2025-06-08)
+## [0.1.3a1](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/0.1.3a1) (2025-11-05)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.1.1...0.1.2a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/V0.1.2...0.1.3a1)
 
 **Merged pull requests:**
 
-- fix: opm 1.X.X [\#22](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/22) ([JarbasAl](https://github.com/JarbasAl))
+- Update ovos-plugin-manager version range [\#24](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/24) ([JarbasAl](https://github.com/JarbasAl))
 
-## [V0.1.1](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.1.1) (2024-11-06)
+## [V0.1.2](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/V0.1.2) (2025-06-08)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/0.1.1...V0.1.1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/0.1.2...V0.1.2)
 
 
 
