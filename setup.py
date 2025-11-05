@@ -46,7 +46,7 @@ with open(os.path.join(BASEDIR, "readme.md"), "r") as f:
 
 
 setup(
-    name='ovos-phal-plugin-connectivity-events',
+    name='ovos_phal_plugin_connectivity_events',
     version=get_version(),
     description='A PHAL plugin for mycroft/ovos/neon',
     long_description=long_description,
