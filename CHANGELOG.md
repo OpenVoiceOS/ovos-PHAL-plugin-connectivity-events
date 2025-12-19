@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.4a3](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/0.1.4a3) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/0.1.4a2...0.1.4a3)
+
+**Merged pull requests:**
+
+- Update dependency python to 3.14 [\#27](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/27) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [0.1.4a2](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/0.1.4a2) (2025-12-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/0.1.4a1...0.1.4a2)
