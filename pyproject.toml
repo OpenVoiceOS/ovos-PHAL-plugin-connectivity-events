@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ovos_phal_plugin_connectivity_events"
+dynamic = ["version"]
+description = "A PHAL plugin for mycroft/ovos/neon"
+readme = "readme.md"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "JarbasAi", email = "jarbasai@mailfence.com"}
+]
+keywords = ["ovos", "phal", "plugin"]
+dependencies = [
+    "ovos-plugin-manager>=0.0.21,<3.0.0",
+    "ovos-bus-client>=0.0.3,<3.0.0"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov"
+]
+
+[project.urls]
+Homepage = "https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events"
+
+[project.entry-points."opm.phal"]
+"ovos-phal-plugin-connectivity-events" = "ovos_phal_plugin_connectivity_events:ConnectivityEvents"
+
+[tool.setuptools.dynamic]
+version = {attr = "ovos_phal_plugin_connectivity_events.version.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ovos_phal_plugin_connectivity_events*"]
+
+[tool.setuptools.package-data]
+ovos_phal_plugin_connectivity_events = [
+    "*.json",
+]
