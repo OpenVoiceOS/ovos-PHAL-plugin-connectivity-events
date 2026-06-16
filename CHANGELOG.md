@@ -1,11 +1,12 @@
 # Changelog
 
-## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/HEAD)
+## [0.1.5a2](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/0.1.5a2) (2026-06-16)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/0.1.4a3...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/0.1.4a3...0.1.5a2)
 
 **Merged pull requests:**
 
+- chore: add missing shared CI workflows [\#40](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/40) ([JarbasAl](https://github.com/JarbasAl))
 - fix\(deps\): allow ovos-bus-client 2.x \(widen cap to \<3.0.0\) [\#35](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/35) ([JarbasAl](https://github.com/JarbasAl))
 
 ## [0.1.4a3](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/0.1.4a3) (2025-12-19)
