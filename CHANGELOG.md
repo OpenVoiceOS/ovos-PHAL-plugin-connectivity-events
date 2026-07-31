@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.6a2](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/0.1.6a2) (2026-07-31)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/0.1.6a1...0.1.6a2)
+
+**Merged pull requests:**
+
+- docs: rewrite README in Simplified Technical English [\#44](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/pull/44) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.6a1](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/tree/0.1.6a1) (2026-06-16)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL-plugin-connectivity-events/compare/0.1.5a2...0.1.6a1)
